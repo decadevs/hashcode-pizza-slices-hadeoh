@@ -26,7 +26,7 @@ public class Main {
                 if (sum + Integer.parseInt(slicesArr[index]) > maximumSlices) {
                     continue;
                 } else {
-                    sum += Integer.parseInt(slicesArr[i]);
+                    sum += Integer.parseInt(slicesArr[index]);
                     indices.add(index);
                 }
             }
