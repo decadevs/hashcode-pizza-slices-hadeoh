@@ -23,7 +23,7 @@ public class Main {
             int iterationLength = slicesArr.length - 1;
 
             for (int index = iterationLength; index >= 0; index--) {
-                if (sum + Integer.parseInt(slicesArr[i]) > maximumSlices) {
+                if (sum + Integer.parseInt(slicesArr[index]) > maximumSlices) {
                     continue;
                 } else {
                     sum += Integer.parseInt(slicesArr[i]);
