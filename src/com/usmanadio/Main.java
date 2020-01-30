@@ -20,13 +20,14 @@ public class Main {
             int maximumSlices = Integer.parseInt(pizzaArr[0]);
             int sum = 0;
             ArrayList<Integer> indices = new ArrayList<>();
+            int iterationLength = slicesArr.length - 1;
 
-            for (int i = slicesArr.length - 1; i >= 0; i--) {
+            for (int index = iterationLength; index >= 0; index--) {
                 if (sum + Integer.parseInt(slicesArr[i]) > maximumSlices) {
                     continue;
                 } else {
                     sum += Integer.parseInt(slicesArr[i]);
-                    indices.add(i);
+                    indices.add(index);
                 }
             }
             Collections.reverse(indices);
